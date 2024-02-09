@@ -1,0 +1,21 @@
+body {
+    background-color: #AAAA;
+}
+
+h2 {
+    text-align: center;
+}
+
+table {
+    width: 50%;
+    margin: auto;
+}
+
+table, td, tr, th {
+    border: 2px solid rgb(49, 48, 48);
+}
+ td {
+    text-align: right;
+ }
+
+

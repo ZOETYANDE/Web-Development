@@ -1,0 +1,39 @@
+
+
+h1 {
+    color: purple;
+}
+
+#header1 {
+    color: grey;
+}
+
+table, th, td {
+    border: 2px dashed black;
+    border-collapse: collapse;
+}
+
+button:hover{
+    color:orange;
+}
+
+p{
+    text-decoration: underline red wavy 3px;
+}
+
+.example {
+    color: grey;
+    border: red solid 2px;
+    padding: 24px;
+    margin: 24px;
+}
+.parent{
+    border: 4px solid red;
+}
+
+.child{
+    width: 50%;
+    padding: 20px;
+    border: 4px solid green;
+    margin: auto;
+}
