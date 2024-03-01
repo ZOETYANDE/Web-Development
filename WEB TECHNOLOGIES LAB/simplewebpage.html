@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: aliceblue;
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-item{
+            margin: 14px;
+        }
+        nav{
+            margin:0 240px;
+        }
+        header{
+            margin-top: 24px;
+        }
+        .intro, .img{
+            margin-top: 240px;
+        }
+        
+        .intro{
+            float: left;
+            margin-left: 240px;
+        }
+        div > img{
+            width: 245px;
+            height: 35%;
+            float: right;
+            margin-right: 240px;
+            border-radius: 50%;
+        }
+
+        .intro > p{
+            font-size: 24px;
+        }
+
+        .nav-item,.locate {
+            color: #34dddd;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./worldwide.png" alt="logo" class="logo" width="50px">
+            <div class="navigation">
+                <span class="nav-item">Home</span>
+                <span class="nav-item">About</span>
+                <span class="nav-item">Project</span>
+                <span class="nav-item">Contact Me</span>
+            </div>
+        </nav>
+        <section class="present">
+            <div class="intro">
+                <p>
+                    Hey! I am Mohamed Zoetyande <br>
+                    Aspiring Computer Scientist             
+                    <span class="locate">LPU</span>
+                </p>
+            </div>
+            <div class="img">
+                <img src="./pic.jpg" alt="Simple pic">
+            </div>
+        </section>
+    </header>
+</body>
+</html>
