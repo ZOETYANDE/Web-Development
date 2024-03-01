@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+  </head>
+  <body>
+    <h1 id="header"></h1>
+    <form action="">
+    <fieldset>
+        <legend>Personal Details</legend>
+        <label for="name">Name:</label>
+            <input type="text" name="name"><br>
+            <label for="Password">Password:</label>
+            <input type="password" name="password"><br>
+            <label for="E-mail">E-mail id:</label>
+            <input type="email" name="email"><br>
+            <label for="gender">Gender</label>
+            <input type="radio" name="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="female" value="female">
+            <label for="female">Female</label>
+    </fieldset>
+    <fieldset>
+        <legend><h3>Educational Qualifications</h3></legend>
+      <label for="degree">Degree:</label>
+      <select name="education">
+        <option value="">--Select Group--</option>
+        <option value="10+">10+</option>
+        <option value="bachelor">Bachelor</option>
+        <option value="master">Masters</option>
+      </select><br>
+      <label for="Engineering">Engineering</label>
+      <select name="education">
+        <option value="">--Select Group--</option>
+        <option value="10+">10+</option>
+        <option value="bachelor">Bachelor</option>
+        <option value="master">Masters</option>
+      </select><br>
+      <label for="hobbies">Hobbies:</label>
+      <input type="checkbox" name="Playing Chess">
+      <label for="Chess">Playing Chess</label>
+      <input type="checkbox" name="books">
+      <label for="books">Reading Books</label><br>
+    </fieldset>
+    <fieldset>
+        <legend><h3>Address</h3></legend>
+        <textarea name="address" id="address" cols="30" rows="6"></textarea>
+
+    </fieldset>
+    </form>
+    <script src="src/script.js"></script>
+  </body>
+</html>
