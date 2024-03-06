@@ -5,7 +5,7 @@ class Animal{
     }
 
     isActive(){
-        console.log(energy);
+        console.log(this.energy);
         if(this.energy > 0){
             this.energy -= 10;
             console.log("Energy is decreasing, currently at: ", this.energy);
@@ -23,7 +23,7 @@ class Animal{
     }
 }
 class Cat extends Animal{
-    constructor(color, energy, sound, canJumpHigh, canClimbTrees){
+    constructor(color, energy, sound = "purr", canJumpHigh, canClimbTrees=true){
         super(color, energy);
         this.sound = sound;
         this.canJumpHigh = canJumpHigh;
@@ -34,7 +34,7 @@ class Cat extends Animal{
     }
 }
 class Bird extends Animal{
-    constructor(sound, canFly, color, energy){
+    constructor(sound="chirp", canFly=true, color, energy){
         super(color, energy);
         this.sound = sound;
         this.canFly = canFly;
@@ -45,12 +45,12 @@ class Bird extends Animal{
 }
 
 class HouseCat extends Cat{
-    constructor(color, energy, sound, canJumpHigh, canClimbTrees, houseCatSound){
+    constructor(color, energy, sound, canJumpHigh, canClimbTrees, houseCatSound="meow"){
         super(color, energy, sound, canJumpHigh, canClimbTrees);
         this.houseCatSound = houseCatSound;
     }
     makeSound(option){
-        if(option == true){
+        if(option){
             super.makeSound();
         }
         else {
@@ -59,8 +59,8 @@ class HouseCat extends Cat{
     }
 }
 class Tiger extends Cat{
-    constructor(tigerSound){
-        super();
+    constructor(color, energy, sound, canJumpHigh, canClimbTrees, tigerSound= "Roar"){
+        super(color, energy, sound, canJumpHigh, canClimbTrees);
         this.tigerSound = tigerSound;
     }
     makeSound(option){
@@ -74,13 +74,32 @@ class Tiger extends Cat{
 }
 
 class Parrot extends Bird{
-    constructor(canTalk){
-        super();
+    constructor(sound="chirp", canFly=true, color, energy, canTalk=false){
+        super(sound, color, canFly, energy);
         this.canTalk = canTalk;
     }
     makeSound(option){
-        if(option == true){
-
+        if(option){
+            super.makeSound();
+        }
+        if(this.canTalk){
+            console.log("I'am a talking parrot!");
         }
     }
 }
+
+let polly = new Parrot(true);
+let fiji = new Parrot(false);
+
+polly.makeSound();
+fiji.makeSound();
+
+polly.isActive();
+
+let penguin = new Bird("Shriek", false, "black and white", 200);
+console.log(penguin);
+penguin.makeSound();
+console.log(penguin.canFly);
+penguin.getColor();
+penguin.energy;
+penguin.isActive();
