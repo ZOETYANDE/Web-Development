@@ -29,7 +29,15 @@
                 <input type="range" id="booking_people" name="booking_people" min="1" max="10" value="4" oninput="this.nextElementSibling.value = this.value">
                 <output>4</output>
             </div>
-            <div></div>
+            <div>
+                <label for="booking_location">Booking Location</label>
+                <input id="booking_location" name="booking_location" list="locations">
+                <datalist id="locations">
+                    <option value="#">Select location</option>
+                    <option value="Downtown">Downtown</option>
+                    <option value="Uptown">Uptown</option>
+                </datalist>
+            </div>
         </form>
         
     </main>
