@@ -21,20 +21,82 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        <!--Add your website name or logo here-->
-        <p>Header</p>
+    <header >
+        <img class="logo" src="./images/logos/Asset 2@3x.png" alt="logo of Lucky Shrub">
     </header>
-    <nav>
+    <nav class="nav-bar">
         <!-- Add your website navigation here-->
+        <ul class="nav-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="#">Info</a></li>
+        </ul>
     </nav>
-    <main>
+    <main class="main-container">
         <!-- Add your main content here-->
-        <h1>Heading</h1>
-    </main>
-    <footer>
+
+        <!--Section for promotion starts here -->
+    <section class="home" id="home">
+        <div class="promotion">
+            <div class="hero-text">
+                <h1>Heading1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Natus provident dolores mollitia maiores facilis nam corporis
+                    saepe. Hic perspiciatis error aliquam veritatis nulla, 
+                    labore iure eaque iusto voluptate odit accusantium.</p>
+            </div>
+           
+            <div><img class="hero-pic" src="./images/pics/zane-lee.jpg" alt="#"></div>
+        </div>
+    </section>
+        <!--Section Promotion ends here-->
+        
+        <!--Section for product starts here-->
+    <section class="products" id="products">
+            <!--Arcticle 1-->
+        <article class="product product1">
+            <div class="product-card">
+                <img class="images prod1" src="./images/pics/behzad-ghaffarian.jpg" alt="#">
+                <h2>Exterior Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, 
+                    reprehenderit libero cumque quasi provident molestias cupiditate </p>
+                    <span>Pricing</span>
+            </div>
+        </article>
+
+            <!--Arcticle 2-->
+        <article class="product product">
+            <div class="product-card">
+                <img class="images prod2" src="./images/pics/markus-spiske.jpg" alt="#">
+                <h2>Gardening</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, 
+                    reprehenderit libero cumque quasi provident molestias cupiditate </p>
+                    <span>Pricing</span>
+            </div>
+        </article>
+
+            <!--Arcticle 3-->
+        <article class="product product2">
+            <div>
+                <img class="images prod3" src="./images/pics/stephanie-harvey.jpg" alt="#">
+                <h2>Mural Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, 
+                    reprehenderit libero cumque quasi provident molestias cupiditate </p>
+                <span>Pricing:</span>
+            </div>
+        </article>
+    </section>
+        <!--Section for product ends here-->
+        
+</main>
+    </div>
+    <footer class="footer">
         <!-- Add copyright notices and other footer content here-->
-        <p>Footer</p>
+        <div>
+            <img class="logo" src="./images/logos/Asset 2@3x.png" alt="">
+        </div>
+        <div>copyright</div>
     </footer>
     <script src="./js/script.js"></script>
 </body>
