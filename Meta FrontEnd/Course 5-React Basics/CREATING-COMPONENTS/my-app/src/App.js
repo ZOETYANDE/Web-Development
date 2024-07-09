@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 
@@ -7,7 +7,6 @@ function Heading(){
     <div>
       <h1>This is an h1 heading.</h1>
     </div>
-    
   )
 }
 
